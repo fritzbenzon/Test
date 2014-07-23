@@ -1,0 +1,41 @@
+Change of Credit Card
+
+
+>> Applied, Account Number field is included when searching for Contact
+>> Applied, Sales rep and CSR fields are removed from the Billing Account Page Layout
+>> It is during the keying of the Credit Card Number to show credit card type.
+>> Credit Card Field Number cannot be format. If SPH manually select the Card Type, standard validation will happened for incorrect format for the  selected Credit Card Type.
+>> System doesn't have OOB for validation of Credit Card if it is already used. Since we are using the hosted payment page of Zuora.
+>> Success Message is out of the box function that can be use for the successful transaction.
+
+
+Change Of Payment Type
+
+
+>> Existing Current Payment type can be shown thru re-rendering the page
+>> Since we are using the hosted payment page of zuora, existing Credit Card number cannot be shown. In order to show this fields we need to add custom fields to capture credit card details.
+>> Credit Balance can be shown thru re-rendering the page after Billing account is selected from the page
+
+
+Failure Credit Card
+
+
+>> An Ad Hoc payment will have to make it thru this approach. if we will be using the credit card again. 
+ 
+
+Process Ad Hoc Payment
+
+
+>> Yes an Ad Hoc Payment can be used to offset an outstanding balance.
+>> Only one payment method per Billing Account is accomodated. If other payment method will be set, another Billing Account must be created.
+>> It can be done thru adhoc payment then, reset the credit card again in the Billing Account for re-used
+
+
+
+Refund Processing
+
+
+>> Credit Balance can be transferred to other Billing Account.
+>> 
+>> Proposal is to use standard columns for items to approve and add Description field. 
+
